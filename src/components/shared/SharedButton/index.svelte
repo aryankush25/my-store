@@ -12,7 +12,7 @@
     display: inline-block;
     background: #6dabe4;
     color: #fff;
-    border-bottom: none;
+    border: none;
     padding: 15px 39px;
     border-radius: 5px;
     cursor: pointer;
