@@ -9,7 +9,6 @@
 
   import { emailValidator, passwordValidator } from "../utils/validators.js";
 
-  let rememberMe = false;
   let email = "";
   let password = "";
   let isLoading = false;
@@ -47,10 +46,14 @@
     font-weight: bold;
     margin-bottom: 40px;
   }
+
+  .login-button {
+    padding-top: 20px;
+  }
 </style>
 
 <svelte:head>
-  <title>Task Management App - Login</title>
+  <title>My store - Login</title>
 </svelte:head>
 
 <LoginSignUpPageContainer reverse={false}>
@@ -79,16 +82,13 @@
       placeholder="Enter Password"
       error={validatorPassword.errorMessage} />
 
-    <SharedCheckbox
-      name="rememberMe"
-      bind:checked={rememberMe}
-      label="Remember me" />
-
-    <SharedButton
-      label="Log in"
-      name="login-button"
-      isDisabled={!isValidFormData}
-      {isLoading}
-      on:click={handleOnSubmit} />
+    <div class="login-button">
+      <SharedButton
+        label="Log in"
+        name="login-button"
+        isDisabled={!isValidFormData}
+        {isLoading}
+        on:click={handleOnSubmit} />
+    </div>
   </form>
 </LoginSignUpPageContainer>

@@ -79,7 +79,7 @@
 </style>
 
 <svelte:head>
-  <title>Task Management App - Register</title>
+  <title>My store - Register</title>
 </svelte:head>
 
 <LoginSignUpPageContainer reverse={true}>
