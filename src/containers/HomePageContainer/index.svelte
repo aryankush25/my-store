@@ -6,12 +6,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
   }
 
   .home-page-wrapper {
     background-color: #ffffff;
-    height: 90%;
-    width: 90%;
+    height: 100%;
+    width: 100%;
     border-radius: 30px;
     box-sizing: border-box;
     padding: 30px 0;
